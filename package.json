@@ -12,6 +12,14 @@
     "pretest": "tsc lib/spectron.d.ts",
     "test": "npm run lint && xvfb-maybe --server-args=\"-screen 0 1024x768x24\" -- mocha"
   },
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "CHANGELOG.md",
+    "index.js",
+    "lib",
+    "vendor"
+  ],
   "engines": {
     "node": ">=10.12.0"
   },
