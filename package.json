@@ -4,6 +4,12 @@
   "description": "Easily test your Electron apps using ChromeDriver and WebdriverIO.",
   "main": "index.js",
   "types": "./lib/spectron.d.ts",
+  "files": [
+    "*.js",
+    "*.md",
+    "lib/**",
+    "vendor/**"
+  ],
   "scripts": {
     "lint": "eslint \"**/*.js\" \"**/*.ts\" && prettier --check \"**/*.js\" \"**/*.ts\"",
     "prettier:write": "prettier --write \"**/*.js\" \"**/*.ts\"",
