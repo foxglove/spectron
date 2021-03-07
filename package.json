@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "lint": "eslint \"**/*.js\" \"**/*.ts\" && prettier --check \"**/*.js\" \"**/*.ts\"",
+    "postinstall": "node lib/rpath-fix.js",
     "prettier:write": "prettier --write \"**/*.js\" \"**/*.ts\"",
     "test": "npm run lint && xvfb-maybe --server-args=\"-screen 0 1024x768x24\" -- mocha"
   },
